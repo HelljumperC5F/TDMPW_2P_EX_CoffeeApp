@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tdmpw_2p_ex_77344.WelcomePage"
+             Title="Bienvenido">
+    <VerticalStackLayout
+        HorizontalOptions="Fill"
+        VerticalOptions="Fill"
+        Margin="20, 0, 0, 0">
+        <Label 
+            Text="Bienvenido (a) ☕"
+            FontAttributes="Bold"
+            FontSize="30"
+            Margin="0, 20"/>
+        <HorizontalStackLayout
+            HeightRequest="30"
+            Spacing="10">
+            <Image
+                Source="user.png"
+                VerticalOptions="Center"
+                HeightRequest="18"/>
+            <Label 
+                FontSize="18"
+                VerticalOptions="Center"
+                Text="Ingresar"/>
+            <Image
+                Source="mail.png"
+                Margin="20, 0, 0, 0"
+                VerticalOptions="Center"
+                HeightRequest="18"/>
+            <Label 
+                FontSize="18"
+                VerticalOptions="Center"
+                Text="Inbox"/>
+            <Image
+                Source="export.png"
+                Margin="20, 0, 0, 0"
+                VerticalOptions="Center"
+                HeightRequest="18"/>
+        </HorizontalStackLayout>
+        <VerticalStackLayout
+            HorizontalOptions="Start"
+            WidthRequest="400">
+            <Label 
+                Margin="0, 20"
+                Text="STARBUCKS REWARDS™"/>
+            <Border
+                StrokeShape="RoundRectangle 0, 0, 0, 0">
+                <Image
+                    Aspect="AspectFill"
+                    Source="coffee_cute.png"/>
+            </Border>
+            <Label 
+                Margin="0, 20"
+                Text="Obtén bebidas gratis, alimentos y más"/>
+            <Border
+                HeightRequest="270"
+                StrokeShape="RoundRectangle 0, 0, 0, 0">
+                <Image
+                    Aspect="AspectFill"
+                    Source="food.jpg"/>
+            </Border>
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

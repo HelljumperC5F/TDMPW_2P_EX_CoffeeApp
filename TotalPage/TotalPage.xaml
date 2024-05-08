@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tdmpw_2p_ex_77344.TotalPage"
+             Title="Total">
+    <VerticalStackLayout
+        HorizontalOptions="Fill"
+        VerticalOptions="Fill"
+        Margin="20, 0, 0, 0">
+        <Label 
+            Text="Total"
+            FontAttributes="Bold"
+            FontSize="23"
+            Margin="0, 20"/>
+        <HorizontalStackLayout
+            Margin="0, 10">
+            <Border
+                StrokeShape="Ellipse 50, 50"
+                HeightRequest="100"
+                WidthRequest="100">
+                <Image
+                    x:Name="ProductImage"
+                    Source="frapuccino.png"/>
+            </Border>
+            <VerticalStackLayout
+                HorizontalOptions="EndAndExpand">
+                <Label
+                    x:Name="ProductName"
+                    Text="Frapuccino"
+                    Margin="15, 0"
+                    HorizontalOptions="EndAndExpand"
+                    VerticalOptions="Center"
+                    FontAttributes="Bold"
+                    FontSize="20"/>
+                <Label
+                    x:Name="LabelProductQuantity"
+                    Text="x 1"
+                    HorizontalOptions="EndAndExpand"
+                    Margin="15, 5"
+                    VerticalOptions="Center"
+                    FontSize="15"/>
+                <Label
+                    x:Name="ProductTotal"
+                    Text="Total: $ 38.00"
+                    HorizontalOptions="EndAndExpand"
+                    Margin="15, 5"
+                    VerticalOptions="Center"
+                    FontSize="15"/>
+            </VerticalStackLayout>
+            <HorizontalStackLayout
+                Margin="30, 0"
+                HorizontalOptions="CenterAndExpand">
+                <ImageButton 
+                    Clicked="RemoveProduct"
+                    WidthRequest="30"
+                    HeightRequest="30"
+                    Source="minus.png"/>
+                <ImageButton 
+                    Clicked="AddProduct"
+                    Margin="20, 0"
+                    WidthRequest="30"
+                    HeightRequest="30"
+                    Source="plus.png"/>
+            </HorizontalStackLayout>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout
+            Margin="0, 30"
+            HorizontalOptions="CenterAndExpand">
+            <VerticalStackLayout
+                Margin="0, 0, 10, 0">
+                <Border
+                    StrokeShape="Ellipse 50, 50"
+                    HeightRequest="100"
+                    WidthRequest="100">
+                <ImageButton
+                    Clicked="ChangeProductFrapuccino"
+                    CommandParameter="Frapuccino"
+                    Source="frapuccino.png"/>
+                </Border>
+                <Label
+                    Text="Frapuccino"
+                    HorizontalOptions="Center"
+                    Margin="0, 10"
+                    FontSize="18"
+                    FontAttributes="Bold"/>
+            </VerticalStackLayout>
+            <VerticalStackLayout
+                Margin="10, 0">
+                <Border
+                    StrokeShape="Ellipse 50, 50"
+                    HeightRequest="100"
+                    WidthRequest="100">
+                <ImageButton
+                    Clicked="ChangeProductBrownie"
+                    CommandParameter="Brownie"
+                    Source="brownie.jpg"/>
+                </Border>
+                <Label
+                    Text="Brownie"
+                    HorizontalOptions="Center"
+                    Margin="0, 10"
+                    FontSize="18"
+                    FontAttributes="Bold"/>
+            </VerticalStackLayout>
+            <VerticalStackLayout
+                Margin="10, 0">
+                <Border
+                    StrokeShape="Ellipse 50, 50"
+                    HeightRequest="100"
+                    WidthRequest="100">
+                <ImageButton
+                    Clicked="ChangeProductTea"
+                    CommandParameter="Té"
+                    Source="tea.png"/>
+                </Border>
+                <Label
+                    Text="Té"
+                    HorizontalOptions="Center"
+                    Margin="0, 10"
+                    FontSize="18"
+                    FontAttributes="Bold"/>
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+        <Label
+            x:Name="BigTotal"
+            Text="Total: $ 38.00"
+            HorizontalOptions="Center"
+            Margin="15, 5"
+            VerticalOptions="Center"
+            FontSize="20"/>
+        <Border
+            Margin="0, 20"
+            HeightRequest="250"
+            WidthRequest="400"
+            StrokeShape="RoundRectangle 0, 0, 0, 0">
+            <Image
+                Aspect="AspectFill"
+                Source="matcha.png"/>
+        </Border>
+    </VerticalStackLayout>
+</ContentPage>

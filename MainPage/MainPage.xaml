@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="tdmpw_2p_ex_77344.MainPage"
+    xmlns:local="clr-namespace:tdmpw_2p_ex_77344"
+    xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
+    android:TabbedPage.ToolbarPlacement="Bottom">
+
+    <NavigationPage Title="Inicio" IconImageSource="star.png">
+        <x:Arguments>
+            <local:WelcomePage />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Ordena" IconImageSource="order.png">
+        <x:Arguments>
+            <local:ProductsPage />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Total" IconImageSource="dolar.png">
+        <x:Arguments>
+            <local:TotalPage />
+        </x:Arguments>
+    </NavigationPage>
+
+</TabbedPage>
